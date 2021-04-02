@@ -10,6 +10,7 @@
 <head>
     <script type="text/javascript" src="@Url.Content("/Scripts/Rubric.js")"></script>
     <link rel="stylesheet" href="~/Content/Rubric.css" type="text/css" />
+    
     <title>Rubric Matrix</title>
 </head>
 <body>
@@ -26,7 +27,7 @@
         </tr>
 
         <tr>
-            <td></td>
+            <td><input class="form-control" id="t1" name="Topic1" type="text" value="" maxlength=30 /></td>
             <td>
                 <input data-val="true"
                        data-val-required="The checkbox field is required."
@@ -57,12 +58,16 @@
                        type="checkbox"
                        value="true" />
             </td>
-            <td><input disabled class="form-control" id="m1" name="Marks1" type="text" value="" /></td>
+            <td>
+                <input disabled class="form-control" id="m1" name="Marks" type="number" value=""
+                       oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                       maxlength="2" />
+            </td>
             <td><textarea disabled class="form-control" cols="20" id="imp1" name="imp1" rows="2"></textarea></td>
             <td><textarea disabled class="form-control" cols="20" id="str1" name="str1" rows="2"></textarea></td>
         </tr>
         <tr>
-            <td></td>
+            <td><input class="form-control" id="t2" name="Topic2" type="text" value="" maxlength=30 /></td>
             <td>
                 <input data-val="true"
                        data-val-required="The checkbox field is required."
@@ -93,12 +98,16 @@
                        type="checkbox"
                        value="true" />
             </td>
-            <td><input disabled class="form-control" id="m2" name="Marks2" type="text" value="" /></td>
+            <td>
+                <input disabled class="form-control" id="m2" name="Marks" type="number" value=""
+                       oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                       maxlength="2" />
+            </td>
             <td><textarea disabled class="form-control" cols="20" id="imp2" name="imp2" rows="2"></textarea></td>
-            <td><textarea  disabled class="form-control" cols="20" id="str2" name="str2" rows="2"></textarea></td>
+            <td><textarea disabled class="form-control" cols="20" id="str2" name="str2" rows="2"></textarea></td>
         </tr>
         <tr>
-            <td></td>
+            <td><input class="form-control" id="t3" name="Topic3" type="text" value="" maxlength=30 /></td>
             <td>
                 <input data-val="true"
                        data-val-required="The checkbox field is required."
@@ -129,12 +138,16 @@
                        type="checkbox"
                        value="true" />
             </td>
-            <td><input disabled class="form-control" id="m3" name="Marks3" type="text" value="" /></td>
+            <td>
+                <input disabled class="form-control" id="m3" name="Marks" type="number" value=""
+                       oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                       maxlength="2" />
+            </td>
             <td><textarea disabled class="form-control" cols="20" id="imp3" name="imp3" rows="2"></textarea></td>
             <td><textarea disabled class="form-control" cols="20" id="str3" name="str3" rows="2"></textarea></td>
         </tr>
         <tr>
-            <td></td>
+            <td><input class="form-control" id="t4" name="Topic4" type="text" value="" maxlength=30 /></td>
             <td>
                 <input data-val="true"
                        data-val-required="The checkbox field is required."
@@ -165,12 +178,16 @@
                        type="checkbox"
                        value="true" />
             </td>
-            <td><input disabled class="form-control" id="m4" name="Marks4" type="text" value="" /></td>
+            <td>
+                <input disabled class="form-control" id="m4" name="Marks" type="number" value=""
+                       oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                       maxlength="2" />
+            </td>
             <td><textarea disabled class="form-control" cols="20" id="imp4" name="imp4" rows="2"></textarea></td>
             <td><textarea disabled class="form-control" cols="20" id="str4" name="str4" rows="2"></textarea></td>
         </tr>
         <tr>
-            <td></td>
+            <td><input class="form-control" id="t5" name="Topic5" type="text" value="" maxlength=30 /></td>
             <td>
                 <input data-val="true"
                        data-val-required="The checkbox field is required."
@@ -201,12 +218,16 @@
                        type="checkbox"
                        value="true" />
             </td>
-            <td><input disabled class="form-control" id="m5" name="Marks5" type="text" value="" /></td>
-            <td><textarea disabled  class="form-control" cols="20" id="imp5" name="imp5" rows="2"></textarea></td>
+            <td>
+                <input disabled class="form-control" id="m5" name="Marks" type="number" value=""
+                       oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                       maxlength="2" />
+            </td>
+            <td><textarea disabled class="form-control" cols="20" id="imp5" name="imp5" rows="2"></textarea></td>
             <td><textarea disabled class="form-control" cols="20" id="str5" name="str5" rows="2"></textarea></td>
         </tr>
         <tr>
-            <td></td>
+            <td><input class="form-control" id="t6" name="Topic6" type="text" value="" maxlength=30 /></td>
             <td>
                 <input data-val="true"
                        data-val-required="The checkbox field is required."
@@ -237,11 +258,15 @@
                        type="checkbox"
                        value="true" />
             </td>
-            <td><input disabled class="form-control" id="m6" name="Marks6" type="text" value="" /></td>
+            <td>
+                <input disabled class="form-control" id="m6" name="Marks" type="number" value=""
+                       oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                       maxlength="2" />
+            </td>
             <td><textarea disabled class="form-control" cols="20" id="imp6" name="imp6" rows="2"></textarea></td>
             <td><textarea disabled class="form-control" cols="20" id="str6" name="str6" rows="2"></textarea></td>
         <tr>
-            <td></td>
+            <td><input class="form-control" id="t7" name="Topic7" type="text" value="" maxlength=30 /></td>
             <td>
                 <input data-val="true"
                        data-val-required="The checkbox field is required."
@@ -272,12 +297,16 @@
                        type="checkbox"
                        value="true" />
             </td>
-            <td><input disabled class="form-control" id="m7" name="Marks7" type="text" value="" /></td>
+            <td>
+                <input disabled class="form-control" id="m7" name="Marks" type="number" value=""
+                       oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                       maxlength="2" />
+            </td>
             <td><textarea disabled class="form-control" cols="20" id="imp7" name="imp7" rows="2"></textarea></td>
             <td><textarea disabled class="form-control" cols="20" id="str7" name="str7" rows="2"></textarea></td>
         </tr>
         <tr>
-            <td></td>
+            <td><input class="form-control" id="t8" name="Topic8" type="text" value="" maxlength=30 /></td>
             <td>
                 <input data-val="true"
                        data-val-required="The checkbox field is required."
@@ -308,12 +337,16 @@
                        type="checkbox"
                        value="true" />
             </td>
-            <td><input disabled class="form-control" id="m8" name="Marks8" type="text" value="" /></td>
+            <td>
+                <input disabled class="form-control" id="m8" name="Marks" type="number" value=""
+                       oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                       maxlength="2" />
+            </td>
             <td><textarea disabled class="form-control" cols="20" id="imp8" name="imp8" rows="2"></textarea></td>
             <td><textarea disabled class="form-control" cols="20" id="str8" name="str8" rows="2"></textarea></td>
         </tr>
         <tr>
-            <td></td>
+            <td><input class="form-control" id="t9" name="Topic9" type="text" value="" maxlength=30 /></td>
             <td>
                 <input data-val="true"
                        data-val-required="The checkbox field is required."
@@ -344,13 +377,17 @@
                        type="checkbox"
                        value="true" />
             </td>
-            <td><input disabled class="form-control" id="m9" name="Marks9" type="text" value="" /></td>
+            <td>
+                <input disabled class="form-control" id="m9" name="Marks" type="number" value=""
+                       oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                       maxlength="2" />
+            </td>
             <td><textarea disabled class="form-control" cols="20" id="imp9" name="imp9" rows="2"></textarea></td>
             <td><textarea disabled class="form-control" cols="20" id="str9" name="str9" rows="2"></textarea></td>
 
         </tr>
         <tr>
-            <td></td>
+            <td><input class="form-control" id="t10" name="Topic10" type="text" value="" maxlength=30 /></td>
             <td>
                 <input data-val="true"
                        data-val-required="The checkbox field is required."
@@ -381,10 +418,23 @@
                        type="checkbox"
                        value="true" />
             </td>
-            <td><input disabled class="form-control" id="m10" name="Marks10" type="text" value="" /></td>
+            <td>
+                <input disabled class="form-control" id="m10" name="Marks" type="number" value=""
+                       oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                       maxlength="2" />
+            </td>
             <td><textarea disabled class="form-control" cols="20" id="imp10" name="imp10" rows="2"></textarea></td>
             <td><textarea disabled class="form-control" cols="20" id="str10" name="str10" rows="2"></textarea></td>
         </tr>
+        <tr><td style="visibility:hidden" ></td>
+        <td style="visibility:hidden"></td >
+        <td style="visibility:hidden"></td>
+        <td style="visibility:hidden"></td>
+        <td><input type="text" name="total" id="total" />
+            <br /><br />
+            <a href="javascript:sumInputs()">Total</a>
+            </td></tr>
+        
     </table>
     </body>
 </html>

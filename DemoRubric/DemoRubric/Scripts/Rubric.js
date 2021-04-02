@@ -1,4 +1,20 @@
-﻿function check1(el) {
+﻿window.sumInputs = function () {
+    var inputs = document.getElementsByName('Marks'),
+        result = document.getElementById('total'),
+        sum = 0;
+
+    for (var i = 0; i < inputs.length; i++) {
+        var ip = inputs[i];
+
+        if (ip.name && ip.name.indexOf("total") < 0) {
+            sum += parseInt(ip.value) || 0;
+        }
+
+    }
+
+    result.value = sum;
+}
+function check1(el) {
     var cbox = document.getElementsByName("checkbox");
     cbox.forEach(function (item) {
         if (item != el)
