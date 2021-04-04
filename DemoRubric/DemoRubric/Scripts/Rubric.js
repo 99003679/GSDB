@@ -1,4 +1,6 @@
-﻿window.sumInputs = function () {
+﻿
+
+window.sumInputs = function () {
     var inputs = document.getElementsByName('Marks'),
         result = document.getElementById('total'),
         sum = 0;

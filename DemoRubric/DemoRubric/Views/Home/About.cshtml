@@ -8,9 +8,12 @@
 
 <html>
 <head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
     <script type="text/javascript" src="@Url.Content("/Scripts/Rubric.js")"></script>
     <link rel="stylesheet" href="~/Content/Rubric.css" type="text/css" />
-    
+
     <title>Rubric Matrix</title>
 </head>
 <body>
@@ -426,7 +429,7 @@
             <td><textarea disabled class="form-control" cols="20" id="imp10" name="imp10" rows="2"></textarea></td>
             <td><textarea disabled class="form-control" cols="20" id="str10" name="str10" rows="2"></textarea></td>
         </tr>
-        <tr><td style="visibility:hidden" ></td>
+        <tr><td ><input placeholder="PS Number" class="form-control" id="psno" name="psno" type="number" value="" /> </td>
         <td style="visibility:hidden"></td >
         <td style="visibility:hidden"></td>
         <td style="visibility:hidden"></td>
